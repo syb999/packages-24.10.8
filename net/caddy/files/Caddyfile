@@ -1,0 +1,9 @@
+0.0.0.0:8000
+{
+gzip
+webdav /webdav {
+scope /mnt
+}
+root /mnt
+browse
+}
