@@ -221,6 +221,8 @@ define Package/vim-fuller/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/vim_huge $(1)/usr/bin/vim
 	$(INSTALL_DIR) $(1)/usr/share/vim
 	$(LN) vim $(1)/usr/bin/vimdiff
+	$(INSTALL_DIR) $(1)/root
+	$(INSTALL_CONF) ./files/vimrc.fuller $(1)/root/.vimrc
 endef
 
 define Package/vim-runtime/install
